@@ -37,37 +37,16 @@
                 }
                                                                                                                                                                                          }
                 </script>
-                
-               
-                
-                <br>
-                <br>
+                <button onclick = "funk()"> DICE :)</button>
                 <script>
-                    var dice = {
-                        sides: 6
-                        roll: function(){
-                     var randomNumber = Math.floor(Math.random()) * this.sides) +1;
-                        return randomNumber;
-                        
+                    function funk() {
+                     Math.floor(Math.random() * 7)   
                     }
-                        
-                        
-                    }
+               </script>
                 
-                    function printNumber(number){
-                        var placeholder = 
-                            document.getElementById('placeholder')
-                        placeholder.innerHTML = number;
-                    }
-                            
-                        var button = document.getElementbyID('button');
-                    button.onclick = function() {
-                        var result = dice.roll();
-                        printNumber(result);
-                    }
-                        
-                        
-                    }
+                <br>
+                <br>
+               
                 <br> <p>p</p><br> <p>p</p><br> <p>p</p><br> <p>p</p><br>
     </center>
 </body>
