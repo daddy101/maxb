@@ -37,11 +37,22 @@
                 }
                                                                                                                                                                                          }
                 </script>
-                
+                <script>
+                sides = 6
+                </script>
                 <p id= dicet>Click below to roll.</p>
-                <button onclick= 'document.getElementById("dicet").innerHTML = "You rolled a "+ Math.floor(Math.random() * 6 + 1); '> Dice 
+                <button onclick= 'document.getElementById("dicet").innerHTML = "You rolled a "+ sides '> Dice 
                     <br>
-                    roller</button>
+                 roller</button>
+                
+                    <button onclick ="diceFunction()"> How many sides do you want the die to have? </button>        
+                    <script>
+                        function diceFunction() {
+                         var sides =  prompt("How many sides?", sides);
+                            sides = Math.floor(Math.random() * (sides - 1) + 1);
+                        }
+                   
+                    </script>
                 <br>
                 <br>
                
