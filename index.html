@@ -50,7 +50,9 @@
                   //  var sides = prompt("how many sides?","6")
                     </script>
                <button onclick= 'document.getElementById("dicet").innerHTML = Math.floor(Math.random() * (sides) + 1)';> Dice <br> Roller </button>
-                <button onclick = 'var sides = prompt("how many sides?","6")'> How many <br> sides? </button>
+                <button onclick = function (e) {
+                            var sides = 'prompt("how many sides?","6")'
+                        }> How many <br> sides? </button>
                
                 <br>
                 <br>
