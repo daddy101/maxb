@@ -37,11 +37,9 @@
                 }
                                                                                                                                                                                          }
                 </script>
-               <script>
-                  var dice =  Math.floor(Math.random() * 7); 
-                </script>
-                <p id= dicet></p>
-                <button onclick= 'document.getElementById("dicet").innerHTML = "You rolled a "+ dice'> Dice 
+                
+                <p id= dicet>Click below to roll.</p>
+                <button onclick= 'document.getElementById("dicet").innerHTML = "You rolled a "+ Math.floor(Math.random() * 7); '> Dice 
                     <br>
                     roller</button>
                 <br>
