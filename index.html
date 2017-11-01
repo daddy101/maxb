@@ -45,7 +45,15 @@
                 
                 
                 <p id= dicet>a</p>
-               <button onclick= 'document.getElementById("dicet").innerHTML = Math.floor(Math.random() * 6 + 1)';> Dice <br> Roller </button>
+                
+                
+               <button onclick= 'document.getElementById("dicet").innerHTML = Math.floor(Math.random() * ("sides" - 1) + 1)';> Dice <br> Roller </button>
+                <button onclick = funkdice()> How many <br> sides? </button>
+                <script>
+                    function funkdice() {
+                     var sides = prompt("How many sides?", "6")   
+                    }
+                    </script>
                 <br>
                 <br>
                
