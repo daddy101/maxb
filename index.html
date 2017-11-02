@@ -60,13 +60,13 @@
         <p id = rando>Your plot here</p>
         <script>
             function generate() {
-                var desk = [" sticky ", " disgusting ", " fun ", " yellow ", " orange ", " blue ", " amazing ", " hard ", " trashy "]
+                var desk = [" sticky ", " disgusting ", " fun ", " yellow ", " orange ", " blue ", " amazing ", " hard ", " trashy ", " hellish ", " orgasmic ", " horrifying ", " confusing "]
             var ad = desk[Math.floor(Math.random() * desk.length)]; 
             var beginnings = ["A man with a hat","A woman with a hat", "A talking dog","Liam Cupit","Sean Mazz", "Zach Mazz", "Daddy", "Joe"]
             var places = [" school ", " apartment building ", " strangers house ", " taj mahal ", " the white house ", " concert"]
             var place = places[Math.floor(Math.random() * places.length)]; 
             var beginning = beginnings[Math.floor(Math.random() * beginnings.length)];  
-            var endings = [" sets off a bomb at" + place," dramatically eats a child"," sets fire to a forest"," solves a" + ad + "puzzle", " uncovers the mystery of a(n)" + ad + place,]    
+            var endings = [" sets off a bomb at" + place," dramatically eats a child"," sets fire to a forest"," solves a" + ad + "puzzle", " uncovers the mystery of a(n)" + ad + place, "licks a" + ad]    
             var ending = endings[Math.floor(Math.random() * endings.length)];
             document.getElementById("rando").innerHTML = beginning + ending
             }
