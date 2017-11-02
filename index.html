@@ -55,6 +55,18 @@
                    function rollfunk() { document.getElementById("dicet").innerHTML = Math.floor(Math.random() * sides + 1);
                                        }
                    </script>
+        <br><br>
+        <button onclick= "generate()"> Plot generator </button>
+        <p id = rando>ad</p>
+        <script>
+            function generate() {
+            var beginnings = ["A man with a hat","A woman with a hat", "A talking dog","Liam Cupit","Sean Mazz", "Zach Mazz", "Daddy"]
+            var beginning = beginnings[Math.floor(Math.random() * beginnings.length)];  
+            var endings = [" sets off a bomb at a concert"," dramatically eats a child"," sets fire to a forest"," solves a disgusting puzzle"]    
+            var ending = endings[Math.floor(Math.random() * endings.length)];
+            document.getElementById("rando").innerHTML = beginning + ending
+            }
+            </script>
                
                 <br>
                 
