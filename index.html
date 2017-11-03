@@ -60,14 +60,14 @@
         <p id = rando>Your plot here</p>
         <script>
             function generate() {
-                var desk = [" sticky ", " disgusting ", " fun ", " yellow ", " orange ", " blue ", " amazing ", " hard ", " trashy ", " hellish ", " orgasmic ", " horrifying ", " confusing "]
+                var desk = [" sticky ", " disgusting ", " fun ", " yellow ", " orange ", " blue ", " amazing ", " hard ", " trashy ", " hellish ", " orgasmic ", " horrifying ", " confusing ", " strange ", " gooey ", " liquidy "," wet ", " moist "," bright ", " soft ", " hairy ", ]
             var ad = desk[Math.floor(Math.random() * desk.length)]; 
             var beginnings = ["A man with a hat","A woman with a hat", "A talking dog","Liam Cupit","Sean Mazz", "Zach Mazz", "Daddy", "Joe", "Danny","THE MAN", "Mrs.Ovaries", "Canary person", "A pest control worker", "A (redacted) called Candy", "Kyle","A child","A men with a trench coat","A woman with a trench coat", "three children in a trench coat", "A bald man", "A bald woman","Bill cosby", "Devin Triedente", "A pedophile", "Edgar allan Poe"]
             var places = [" school ", " apartment building ", " strangers house ", " casino ", " orphanage " , " concert "," library "," 7/11 ", " CVS ", " WAWA ", " Victoria's secret ",]
             var place = places[Math.floor(Math.random() * places.length)]; 
             var beginning = beginnings[Math.floor(Math.random() * beginnings.length)];  
              var beginning2 = beginnings[Math.floor(Math.random() * beginnings.length)];
-            var endings = [" sets off a bomb at" + place," dramatically eats a child"," sets fire to a forest"," solves a" + ad + "puzzle", " uncovers the mystery of a(n)" + ad + place," gets in a fight with " +beginning2, " makes a new" +ad+ "friend", " shoots up the" +place, " steals from" +place, " attacks someone at"+place," steals the face of "+beginning2, " married a 13 year old", " gets an incurable STD from " +beginning2,]    
+            var endings = [" sets of a bomb at" + place," dramatically eats a child"," sets fire to a forest"," solves a" + ad + "puzzle", " uncovers the mystery of a(n)" + ad + place," gets in a fight with " +beginning2, " makes a new" +ad+ "friend", " shoots up the" +place, " steals from" +place, " attacks someone at"+place," steals the face of "+beginning2, " married a 13 year old", " gets an incurable STD from " +beginning2," accidentally commits genocide"," flings " +beginning2 +" into the sun"," has a fight with " +beginning2 + " at the" +place, " got arrested for possesion of " +ad " CP"]    
             var ending = endings[Math.floor(Math.random() * endings.length)];
             document.getElementById("rando").innerHTML = beginning + ending
             }
