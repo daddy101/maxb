@@ -7,19 +7,21 @@
 	</head>
 
 
-	<h1> Max's Sp00Ktacular Spo0KtorEum</h1>
+	<h1> Max's Sp00Ktacular Spo0Ktoreum</h1>
 
 	<script>
-	randy = Math.floor(Math.random() * 2 + 1)
-	switch(randy) {
-		case "1":
-			rando = pictures/skelly.gif
-			break;
-		case "2"
-			break;
-	}
+	var imageUrls = [
+ 	'pictures/skelly.gif',
+ 	//'http://placehold.it/255x255&text=B',
+  	//'http://placehold.it/255x255&text=Z',
+];
+	var img = document.getElementById('changer');
+img.addEventListener("click",function() {
+    this.src = imageUrls[Math.floor(Math.Random() * imageUrls.length)];
+});
 	</script>
-	<img src=pictures/skelly.gif>			
+	<img id='changer'/>
+			
 			
 			
 			
