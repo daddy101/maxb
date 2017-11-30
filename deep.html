@@ -11,6 +11,14 @@
 
 	<script>
 	
+	var image_count = 2
+	var image = [
+	"pictures/skelly.gif"
+	"pictures/download.jpeg"
+	]
+	var vary = image[Math.floor((Math.random() * 2) + 1)];
+	document.getElementById("changer").src=vary;
+
 	</script>
 	<img id='changer' src=pictures/skelly.gif>
 			
