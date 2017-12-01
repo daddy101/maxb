@@ -13,12 +13,13 @@
 	<script>
 	var darn = Math.floor((Math.random() * image_count) + 1)
 	var image_count = 2
+	var changer = document.getElementById("101")
 	switch (darn){
 	case 1:		
-	document.getElementById("101").src="pictures/skelly.gif";
+	var changer.src="pictures/skelly.gif";
 	break;
 	case 2:		
-document.getElementById("101").src="pictures/download.jpeg";
+	var changer.src="pictures/download.jpeg";
 	break;
 	}
 	document.getElementById("69").innerHTML = "Hello"
