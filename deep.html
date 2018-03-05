@@ -13,17 +13,17 @@
                     var sides = "6"
                     </script>
                              <p id= dicet>Your number here</p>
-                <button onclick = "dicefunk()">How many <br> sides?</button><script>
+                <button class=button onclick = "dicefunk()">How many <br> sides?</button><script>
                 function dicefunk() { sides = prompt("How many sides?", "6");
                                     }
                 </script>
-                <button  onclick="rollfunk()" >Dice <br> roller </button>
+                <button  class=button onclick="rollfunk()" >Dice <br> roller </button>
                <script>
                    function rollfunk() { document.getElementById("dicet").innerHTML = Math.floor(Math.random() * sides + 1);
                                        }
                    </script>
         <br><br>
-        <button onclick= "generate()"> Plot generator </button>
+        <button class=button onclick= "generate()"> Plot generator </button>
         <p id = rando>Your plot here</p>
         <script>
             function generate() {
@@ -69,8 +69,8 @@ document.getElementById("rando").innerHTML = beginning
 			
 			
 		
-				<br><button onclick='document.getElementById("rando").innerHTML = "Devin makes me slimy"'>This is the Devin makes me slimy button.</button><!-- <a href="/maxb/review/review.html"><img href="/maxb/pictures/Cosby.jpg" </a>--> 
-				<br> <button onclick='edd()'> EDDIES DAD THEMED GENERATOR <br> </button>
+
+				<br> <button class=button onclick='edd()'> EDDIES DAD THEMED GENERATOR <br> </button>
 
 			
 			
