@@ -9,22 +9,69 @@
 
 	<h1> MaX's Sp00Ktacular Sp00kt0reum</h1>
 	
-		<img id=101 src=pictures/skelly.gif>
-	<script>
-	var darn = Math.floor((Math.random() * image_count) + 1)
-	var image_count = 2
-	var changer = document.getElementById("101")
-	switch (darn){
-	case 1:		
-	var changer.src="pictures/skelly.gif";
-	break;
-	case 2:		
-	var changer.src="pictures/download.jpeg";
-	break;
-	}
-	document.getElementById("69").innerHTML = "Hello"
-	</script>
+		 <center>
+                <script>
+                    var sides = "6"
+                    </script>
+                             <p id= dicet>Your number here</p>
+                <button onclick = "dicefunk()">How many <br> sides?</button><script>
+                function dicefunk() { sides = prompt("How many sides?", "6");
+                                    }
+                </script>
+                <button  onclick="rollfunk()" >Dice <br> roller </button>
+               <script>
+                   function rollfunk() { document.getElementById("dicet").innerHTML = Math.floor(Math.random() * sides + 1);
+                                       }
+                   </script>
+        <br><br>
+        <button onclick= "generate()"> Plot generator </button>
+        <p id = rando>Your plot here</p>
+        <script>
+            function generate() {
+                var desk = [" sticky ", " disgusting ", " salty ", " amazing ", " hard ", " stiff ", " hellish ", " orgasmic ", " horrifying ", " confusing ", " strange ", " gooey ", " liquidy "," wet ", " moist "," bright ", " soft ", " hairy "," juicy "," vile "," thicc "," thicccccc "," rock-hard " ]
+            var ad = desk[Math.floor(Math.random() * desk.length)]; 
+            var beginnings = ["A man with a hat","A woman with a hat", "A talking dog","Liam Cupit","Sean Mazz", "Zach Mazz", "Daddy", "Joe", "Danny","THE MAN", "Mrs.Ovaries", "Canary person", "A pest control worker", "A (redacted) called Candy", "Kyle","A child","A man with a trench coat","A woman with a trench coat", "three children in a trench coat", "A bald man", "A bald woman","Bill cosby", "Devin Triedente", "A pedophile", "Edgar allan Poe","Kevin spacey","Adolf hitler","A man who thinks he's jesus but is clearly not","A sex worker","A human traffiker","Ulysses S. Grant","An aborted fetus","genghis khan","the pope","a man made of assembled ears","Frankenstein","Frankenstein's monster","A dolphin","A horse","A cat","The Massiah","A goat","Micco"]
+            var places = [" school ", " apartment building ", " strangers house ", " casino ", " orphanage " , " concert "," library "," 7/11 ", " CVS ", " WAWA ", " Victoria's secret "," the beach ", " a basememt ", " hospital "," forest ", " police station ", " fire station ", " street corner " ]
+            var place = places[Math.floor(Math.random() * places.length)]; 
+            var beginning = beginnings[Math.floor(Math.random() * beginnings.length)];  
+             var beginning2 = beginnings[Math.floor(Math.random() * beginnings.length)];
+                var beginning3 = beginnings[Math.floor(Math.random() * beginnings.length)];
+            var endings = [" sets of a bomb at" + place," dramatically eats a child"," sets fire to a "+place," solves a" + ad + "puzzle", " uncovers the mystery of a(n)" + ad + place," gets in a fight with " +beginning2, " makes a new" +ad+ "friend", " shoots up the" +place, " steals from" +place, " attacks someone at"+place," steals the face of "+beginning2, " married a 13 year old", " gets an incurable STD from " +beginning2," accidentally commits genocide"," flings " +beginning2 +" into the sun"," has a fight with " +beginning2 + " at the" +place, " got arrested for possesion of " +ad +" CP"," puts a pipe bomb in a trash can at" +place," aggresivly touches "+beginning2 + " at" +place," said get into my womb to "+beginning2," had an affair with " +beginning2, " became an anarchist"," started doing hard drugs"," extracted "+beginning2+"'s genetic material"," bought a" +ad+" fursuit"," listened in on "+beginning2+"'s conversation with " +beginning3," only has eyes for " +beginning2, " got involved in a love triangle with "+beginning2+" and "+beginning3," found out " +beginning2+"'s secret"," killed themselves.", " succumbed to the poison on a " +ad+"couch"," was murdered by " +beginning2+" in their own home.", " was ravaged by a "+ad+" pack of dogs"," dug up "+beginning2+"'s dirty " +ad+ " secret"," locked "+beginning2+" in a closet."," banged "+beginning2+"  hard"," touched "+beginning2+" in their special bits"," nose fell off"," converted to judaism"," was forced to do 'things' with "+beginning2+" and "+beginning3," did a 'favor' for "+beginning2," drives their 'truck' through "+beginning2+" and "+beginning3," pledged their allegiance to ISIS"," joined the rebellion",]    
+            var ending = endings[Math.floor(Math.random() * endings.length)];
+            document.getElementById("rando").innerHTML = beginning + ending
+            }
+			
+			
+			//////////////////////////////////////////
+			//////////////////////////////////////////
+	function edd() {
+            var weapons = ["Sword","Mace","Flail","Whip","Belt","Dull Knife","Bolas","Boomerang","Spear","Canister of Tear Gas","Flamethrower","Bayonet","Club","Rock","gun"]
+            var weapon = weapons[Math.floor(Math.random() * weapons.length)]; 
+			
+			var peoples = ["child","boy","girl","young girl","young boy","toddler","baby","foreign exchange student","rabbit","bunny","cat","pony","kitten","puppy","one year old","two year old","three year old","four year old","five year old","six year old","seven year old","eight year old","nine year old","ten year old","eleven year old","twelve year old","thirteen year old","fourteen year old","grade-schooler","toddler","pre-pubecent boy","pre-pubecent girl"];
+			var people = peoples[Math.floor(Math.random() * peoples.length)];
+			var people2 = peoples[Math.floor(Math.random() * peoples.length)];
+			var people3 = peoples[Math.floor(Math.random() * peoples.length)];
+			
+			var buildings = ["Pre-School","School","High School"]
+			 var building = buildings[Math.floor(Math.random() * buildings.length)]; 
+			 
+			var beginnings = ["Eddies dad used a "+weapon+" on a "+people,"Eddies dad pleasured himself with a "+weapon,"Eddies dad pleasured himself with a "+people,"Eddies dad vored a "+people,"Eddies dad forced a "+people+" to mate with a "+people2,"Eddies dad spanked the "+people,"Eddies dad slaughtered a "+people+", a "+people2+", and a "+people3+" with a "+weapon, "Eddies dad forced himself upon a "+people,"Eddies dad used a "+people+" as a "+weapon+", it didn't work well","Eddies dad looked into the distance, holding his "+weapon+" in his hand, wondering what he had done","Eddies dad pushed a "+people+" back into the burning building.","Eddies dad donated a "+people+" to the nazis.","Eddies dad pleasured himelf to the thought of a "+people+" and a "+weapon,"Eddie's dad was spotted outside the "+building,"Eddies dad choked a "+people,"Eddies dad framed a "+people,"Eddie's dad got a "+people+" arrested for drug possesion","Eddies dad looks at you in the eyes through this text.","Eddies dad knows who you are, a "+people+" told him","Eddies dad regrets what he did with a "+people+", but only because he got caught","Eddies dad beat a "+people+" to death, in a fit of rage because they disobeyed him.","Eddies dad gave drugs to a "+people+" to try and lure them in","Eddies dad offered free candy to a "+people,]
+			var beginning = beginnings[Math.floor(Math.random() * beginnings.length)]; 
+			
+			
+			
+document.getElementById("rando").innerHTML = beginning
 
+}
+            </script>
+            
+			
+			
+			
+		
+				<br><button onclick='document.getElementById("rando").innerHTML = "Devin makes me slimy"'>This is the Devin makes me slimy button.</button><!-- <a href="/maxb/review/review.html"><img href="/maxb/pictures/Cosby.jpg" </a>--> 
+				<br> <button onclick='edd()'> EDDIES DAD THEMED GENERATOR <br> </button>
 
 			
 			
